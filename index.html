@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Domingues - Visagista</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="src/image/favicon-barber-home.png" type="image/x-icon">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="src/css/tailwind.css">
+    <!-- Icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Scripts JS -->
+    <script src="src/js/script.js" defer></script>
+    <!-- Lib AOS Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>]
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+        .swiper-pagination-bullet-active {
+            background-color: #f13d3d !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="font-poppins px-6 py-4 border border-b-2 border-r-0 border-l-0 fixed w-full z-50 bg-white "
+        id="header">
+        <div class="flex justify-between items-center limit-content">
+            <div>
+                <img src="src/image/logo-white-and-orange.svg" alt="Logo Barber House">
+            </div>
+            <nav>
+                <ul class="max-lg:menu-mobile min-lg:menu-desktop" id="menu-container">
+                    <li>
+                        <i class="icon-close text-5xl min-lg:hidden" id="menu-close"></i>
+                    </li>
+                    <li>
+                        <a href="#home" class="link-menu li-after hover:after:w-full">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services" class="link-menu li-after hover:after:w-full">
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#team" class="link-menu li-after hover:after:w-full">
+                            Sobre Mim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#highlights" class="link-menu li-after hover:after:w-full">
+                            O que é Visagismo?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#testimonials" class="link-menu li-after hover:after:w-full">
+                            Clientes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="link-menu li-after hover:after:w-full">
+                            Contatos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="min-lg:hidden">
+                <i class="icon-menu text-3xl" id="menu-btn"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-x-hidden">
+        <section
+            class="mt-28 pb-28 min-lg:pb-32 min-lg:flex min-lg:gap-10 min-lg:items-center limit-content overflow-x-hidden  "
+            id="home">
+            <div class="pr-9 min-lg:order-2 min-lg:flex-1" data-aos="zoom-out-right" data-aos-duration="1000">
+                <div class="relative after-element">
+                    <img src="src/image/image-home.svg" alt="company barber cutting a client's hair"
+                        class="w-full z-10 relative min-lg:rounded-md">
+                </div>
+            </div>
+
+            <div class="mt-12 px-7 text-center min-lg:flex-1 min-lg:text-left" data-aos="zoom-out-left"
+                data-aos-duration="1000">
+                <h1 class="main-title min-lg:leading-normal">
+                    Harmonia e Estilo Moldando a Sua Melhor <span class="text-brown-primary"> Versão</span>
+                </h1>
+                <p class="mt-4 text-md md:text-lg min-lg:pr-14">
+                    Descubra como sua imagem pode revelar o melhor de você. Vamos juntos transformar sua identidade visual!
+                </p>
+                <button class="mt-7 btn">Marcar uma consultoria</button>
+            </div>
+        </section>
+
+        <div class="divide-1 limit-content"></div>
+
+        <section class="mt-28 pb-28 px-5 min-lg:mt-32 min-lg:pb-44 limit-content" id="services">
+            <div class="section-description" data-aos="fade-down" data-aos-duration="1000">
+                <h2 class="main-title">
+                    Importância do <span class="text-brown-primary">Visagismo</span>
+                </h2>
+                <p class="mt-5 text-md">
+                    Estudos revelam que a sua imagem tem um grande impacto no seu comportamento, que por sua vez impacta nos resultados.
+                    Investimos na empresa, em carros, viagens, casas, mas nem sempre damos a devida importância em quem faz tudo isso acontecer.
+                </p>
+            </div>
+
+            <div class="mt-24 flex flex-col gap-14 text-center min-lg:flex-row min-lg:gap-7">
+            <div class="border-b-4 border-brown-primary pb-16" data-aos="fade-down" data-aos-duration="500">
+                <i class="fas fa-user text-7xl"></i>
+                <h3 class="mt-6 font-bold text-2xl md:text-3xl">Identidade</h3>
+                <p class="mt-4 px-7 text-md md:text-lg ">
+                    É no seu rosto que se encontra o maior senso da sua identidade, e é por isso que eu trato com muita importância
+                    o cabelo a barba, pois eles são a moldura do seu rosto.
+                </p>
+            </div>
+            
+            <div class="border-b-4 border-brown-primary pb-16" data-aos="fade-down" data-aos-duration="500">
+                <i class="fas fa-comment-dots text-7xl"></i>
+                <h3 class="mt-6 font-bold text-2xl md:text-3xl">Expressão</h3>
+                <p class="mt-4 px-7 text-md md:text-lg ">
+                    Estudos revelam que 93% da comunicação não é através das palavras, mas 55% da comunicação não verbal é
+                    distribuído na face.
+                </p>
+            </div>
+            
+            <div class="border-b-4 border-brown-primary pb-16" data-aos="fade-down" data-aos-duration="500">
+                <i class="fas fa-gem text-7xl"></i>
+                <h3 class="mt-6 font-bold text-2xl md:text-3xl">Valorização</h3>
+                <p class="mt-4 px-7 text-md md:text-lg ">
+                    O objetivo será transmitir na imagem pessoal a sua personalidade e valorizar as suas características físicas.
+                </p>
+            </div>
+
+            </div>
+        </section>
+
+        <div class="divide-2 limit-content"></div>
+
+        <section class="mt-28 pb-28 px-5 limit-content min-lg:mt-32 min-lg:pb-44" id="team">
+            <div class="section-description" data-aos="fade-down" data-aos-duration="500">
+                <h2 class="main-title">
+                    Sobre <span class="text-brown-primary">Mim</span>
+                </h2>
+            </div>
+            <!-- Alinhamento lado a lado -->
+            <div class="flex flex-col items-center gap-10 min-lg:flex-row min-lg:items-start">
+                <div class="text-section">
+                    <p class="mt-5 text-md">
+                        Um barbeiro apaixonado pela arte da beleza.
+                        Nascido e criado em Ibiúna, mas recentemente tive a oportunidade de viver em São Paulo,
+                        no bairro da Mooca, onde desenvolvi minha paixão pela beleza e estilo.
+                        Com 26 anos de idade e 6 anos de experiência na profissão, sou especializado em micropigmentação em
+                        barba e formado em visagismo.
+                        Meu objetivo é oferecer serviços inovadores e gerar valor para meus
+                        clientes.
+                        Casado e cristão, busco inspirar e
+                        transformar a aparência e
+                        autoestima das pessoas através do
+                        meu trabalho, sempre guiado por
+                        princípios de excelência, criatividade
+                        e compromisso com a satisfação dos
+                        meus clientes.
+                    </p>
+                </div>
+                <div class="relative w-max" data-aos="fade-down" data-aos-duration="500">
+                    <img src="src/image/team/kristin-watson.jpg" alt="barber image"
+                        class="border-4 border-b-brown-primary border-r-0 border-l-0">
+                    <span class="name-barber">Jean Domingues</span>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="divide-1 limit-content"></div>
+
+        <section class="mt-28 pb-28 px-5 limit-content" id="highlights">
+            <div class="section-description" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="main-title">
+                <span class="text-brown-primary"> Vamos Alinhar a sua Imagem! </span>
+            </h2>
+            
+            <p class="mt-5 text-md">
+                Nessa etapa teremos uma
+                reunião, onde procuro
+                entender o seu momento de
+                vida, desejo de imagem e sua
+                personalidade.
+                Com isso, faremos uma
+                analise das proporções, os
+                detalhes faciais e as
+                assimetrias para assim poder
+                definir para quais áreas do
+                seu rosto serão mais
+                valorizadas e outras
+                disfarçadas.
+            </p>
+            
+            
+            
+            <p class="mt-5 text-md">
+                Para entender mais sobre a sua personalidade utilizaremos da seguinte ferramenta que é usada e testada
+                em Havard para mapeamento de personalidade em contratações de grandes empresas.
+            </p>
+            <button class="mt-7 btn">Clique e faça seu teste</button>
+              
+            </div>
+       
+            <div class="mt-16 grid grid-cols-2 gap-3 min-lg:gap-4 max-lg:max-w-650 min-lg:w-100 min-lg:mx-auto min-lg:grid-cols-4"
+                data-aos="fade-down" data-aos-duration="1000">
+                <div class="flex items-end">
+                    <img src="src/image/gallery/gallery-5.jpg" alt="barber 5" class="w-full">
+                </div>
+
+                <div class="flex items-end">
+                    <img src="src/image/gallery/gallery-4.jpg" alt="barber 4" class="w-full">
+                </div>
+
+                <div
+                    class="col-span-2 bg-[url('../image/gallery/gallery-1.jpg')] bg-cover bg-bottom h-96 min-lg:h-full min-lg:bg-center">
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-28 pb-28 px-5 limit-content" id="highlights">
+            <div class="section-description" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="main-title">
+                <span class="text-brown-primary"> Momento Prático </span>
+            </h2>
+            
+            <p class="mt-5 text-md">
+            As etapas práticas consistem na
+            aplicação prática de todas as
+            propostas de identidade visual
+            construídas ao longo da
+            consultoria.
+            </p>
+            
+            
+            
+            <p class="mt-5 text-md">
+            Testes de penteado e prova de
+            imagem, também neste
+            momento montamos uma
+            proposta de produtos para
+            finalização e cosméticos
+            específicos para o seu cabelo e
+            barba.
+            </p>
+              
+            </div>
+            
+                <div class="mt-16 grid grid-cols-2 gap-3 min-lg:gap-4 max-lg:max-w-650 min-lg:w-100 min-lg:mx-auto min-lg:grid-cols-4"
+                    data-aos="fade-down" data-aos-duration="1000">
+                <div>
+                    <img src="src/image/gallery/gallery-6.jpg" alt="barber 6" class="w-full">
+                </div>
+
+                <div>
+                    <img src="src/image/gallery/gallery-3.jpg" alt="barber 3" class="w-full h-full">
+                </div>
+                <div class="col-span-2">
+                    <img src="src/image/gallery/gallery-2.jpg" alt="barber 2" class="w-full h-full">
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-28 pb-28 px-5 limit-content" id="highlights">
+            <div class="section-description" data-aos="fade-down" data-aos-duration="1000">
+                <h2 class="main-title">
+                    <span class="text-brown-primary"> Dossiê de Identidade Visual. </span>
+                </h2>
+        
+                <p class="mt-5 text-md">
+                O Dossiê Digital é um arquivo
+                de imagens com
+                recomendações personalizadas
+                com base no seu perfil
+                comportamental, estilo, forma
+                de usar o penteado, linha da
+                barba, finalizações de cabelo,
+                tanto para imagem profissional
+                como pessoal. Tudo isso
+                acompanhado de referências
+                visuais para você consultar.
+                </p>
+        
+            </div>
+        
+            <div class="mt-16 grid grid-cols-2 gap-3 min-lg:gap-4 max-lg:max-w-650 min-lg:w-100 min-lg:mx-auto min-lg:grid-cols-4"
+                data-aos="fade-down" data-aos-duration="1000">
+                <div>
+                    <img src="src/image/gallery/gallery-6.jpg" alt="barber 6" class="w-full">
+                </div>
+        
+                <div>
+                    <img src="src/image/gallery/gallery-3.jpg" alt="barber 3" class="w-full h-full">
+                </div>
+                <div class="col-span-2">
+                    <img src="src/image/gallery/gallery-2.jpg" alt="barber 2" class="w-full h-full">
+                </div>
+        
+            </div>
+            </div>
+        </section>
+
+        <div class="divide-2 limit-content"></div>
+
+        <section class="mt-28 pb-28 px-5 limit-content min-lg:mt-32 min-lg:pb-44" id="testimonials">
+            <div class="min-lg:text-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1000">
+                <h2 class="main-title">
+                    Clientes <span class="text-brown-primary">Reviews</span>
+                </h2>
+            </div>
+
+            <div class="swiper mySwiper font-dm-sans mt-7 min-lg:mt-10" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cursor-grab min-lg:px-5">
+                        <blockquote>
+                            <span class="text-5xl font-serif text-brown-primary relative top-5">“</span> Damn that place
+                            is real shit lol. Got there with the homies, music playing
+                            loooooud, a lot of beers and stuff you know? I felt very comfortable too, the air
+                            conditioner was insane. About the cut: the best of my entire life. The barber guy was a
+                            complete MASTER! The price was very expensive though, but I felt like it was worth paying.
+                            Best Cut Ever.
+                        </blockquote>
+
+                        <div class="mt-5 flex justify-between items-center">
+                            <div>
+                                <cite class="flex items-center gap-3">
+                                    <img src="src/image/bob.jpg" alt="image person" class="w-8 rounded-full">
+                                    <span class="italic text-gray-primary">Bob Hairless</span>
+                                </cite>
+                            </div>
+
+                            <div class="flex gap-1">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide cursor-grab min-lg:px-5">
+                        <blockquote>
+                            <span class="text-5xl font-serif text-brown-primary relative top-5">“</span>
+                            I just spent a night at this lovely place as a very special birthday present. It is very
+                            small but our room was very big, beautifully decorated and with a huge state of the art
+                            bathroom which included two beautiful orange bathrobes! The present included a visit to the
+                            spa on the top floor (1 hour and a half)
+                        </blockquote>
+
+                        <div class="mt-5 flex justify-between items-center">
+                            <div>
+                                <cite class="flex items-center gap-3">
+                                    <img src="src/image/damien.jpg" alt="image person" class="w-8 rounded-full">
+                                    <span class="italic text-gray-primary">
+                                        Damien Challeze
+                                    </span>
+                                </cite>
+                            </div>
+
+                            <div class="flex gap-1">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide cursor-grab">
+                        <blockquote>
+                            <span class="text-5xl font-serif text-brown-primary relative top-5">“</span>
+                            Well, it was nice.
+                        </blockquote>
+
+                        <div class="mt-5 flex justify-between items-center">
+                            <div>
+                                <cite class="flex items-center gap-3">
+                                    <img src="src/image/mike.jpg" alt="image person" class="w-8 rounded-full">
+                                    <span class="italic text-gray-primary">
+                                        Big Mike
+                                    </span>
+                                </cite>
+                            </div>
+
+                            <di class="flex gap-1">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                                <img src="src/image/star.svg" alt="star">
+                            </di>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination !static pt-10"></div>
+            </div>
+        </section>
+
+        <div class="divide-1 limit-content"></div>
+
+        <section
+            class="mt-28 pb-28 px-5 limit-content min-lg:mt-32 min-lg:pb-44 min-lg:flex min-lg:items-center min-lg:justify-around overflow-x-hidden  "
+            id="contact">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="main-title">Agora é a hora de investir em <span class="text-brown-primary">VOCÊ</span></h2>
+                <p class="mt-5 text-md min-lg:w-96">
+                    Estudos revelam que a sua imagem tem um grande
+                    impacto no seu comportamento, que por sua vez
+                    impacta nos resultados.
+                    Investimos na empresa, em carros, viagens, casas,
+                    mas nem sempre damos a devida importância em
+                    quem faz tudo isso acontecer
+                </p>
+                <button
+                    class="mt-7 bg-brown-primary text-white px-7 py-3 text-lg font-medium font-dm-sans flex items-center gap-3 rounded-md">
+                    <i class="icon-whatsapp text-white text-2xl"></i>
+                    <span>Envie uma mensagem</span>
+                </button>
+            </div>
+
+            <div class="mt-16 flex flex-col gap-7 min-lg:mt-0" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex items-center gap-3">
+                    <i class="icon-phone text-2xl"></i>
+                    <span>(15) 99733-2347</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <i class="icon-map-pin text-2xl"></i>
+                    <span>Av.Fortunatinho, 92 - Centro, Ibiúna -SP</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <i class="icon-mail text-2xl"></i>
+                    <span>@jeandomingues_obarbeiro</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brown-primary overflow-x-hidden">
+        <div class="px-5 py-16 limit-content min-lg:flex min-lg:items-center min-lg:justify-between"
+            data-aos="fade-left" data-aos-duration="1000">
+            <div>
+                <img src="src/image/logo-white-and-black.svg" alt="Logo Barber House">
+                <p class="text-white text-lg mt-6">©2024 Jean Domingues - Visagista</p>
+                <p class="text-white text-lg mt-4">Desenvolvido por <link rel="stylesheet" href="https://github.com/dvdlucas"></p>
+            </div>
+    </footer>
+
+
+    <!-- AOS Scroll -->
+    <script src="src/js/aosScroll.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
