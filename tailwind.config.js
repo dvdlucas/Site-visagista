@@ -1,31 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [ "./src/js/script.js", "./index.html"],
+  content: ["./src/js/script.js", "./index.html"],
   theme: {
     extend: {
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif'],
-        'dm-sans': ['DM Sans','sans-serif']
-      }, 
+        poppins: ["Poppins", "sans-serif"],
+        "dm-sans": ["DM Sans", "sans-serif"],
+      },
       colors: {
-        'brown-primary': '#AE3824',
-        'brown-secondary': '#23120F',
-        'white-primary': '#FAF9F9',
-        'gray-primary': '#757575'
+        "brown-primary": "#4682B4",
+        "brown-secondary": "#23120F",
+        "white-primary": "#FAF9F9",
+        "gray-primary": "#757575",
+        "text-yellow-500": "#FFFF00",
       },
       spacing: {
-        '1280': '1280px',
-        '1000': '-1000px',
-        '[-40]': '-40px',
-        '520': '520px',
-        '650': '650px',
-        '100': '1000px'
+        1280: "1280px",
+        1000: "-1000px",
+        "[-40]": "-40px",
+        520: "520px",
+        650: "650px",
+        100: "1000px",
       },
       screens: {
-        'max-lg': {'max': '992px'},
-        'min-lg': {'min': '992px'},  
-      }
-    }
+        "max-lg": { max: "992px" },
+        "min-lg": { min: "992px" },
+      },
+    },
   },
-}
-
+};

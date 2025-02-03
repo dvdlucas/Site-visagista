@@ -38,12 +38,12 @@
 @layer components {
     .divide-1 {
         height: 1px;
-        background: linear-gradient(270deg, hsla(9, 36%, 57%, 1) 0%, hsla(9, 65%, 88%, 0.34) 100%);
+        background: linear-gradient(270deg, rgb(92, 92, 92) 0%, hsla(0, 0%, 35%, 0.34) 100%);
     }
 
     .divide-2 {
         height: 1px;
-        background: linear-gradient(270deg, hsla(9, 65%, 88%, 0.34), hsla(9, 36%, 57%, 1));
+        background: linear-gradient(270deg, hsla(0, 0%, 29%, 0.34), rgb(99, 99, 99));
     }
 
     .menu-mobile,
@@ -57,7 +57,7 @@
 
     nav ul li a.active {
         font-weight: 600;
-        color: #AE3824
+        color: #C7C7C7
     }
 
     .limit-content {

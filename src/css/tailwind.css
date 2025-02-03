@@ -599,7 +599,7 @@ nav ul li a.active::after {
 
 nav ul li a.active {
   font-weight: 600;
-  color: #AE3824
+  color: #555555
 }
 
 .limit-content{
@@ -1067,12 +1067,13 @@ nav ul li a.active {
 .text-section {
   flex: 1;
   max-width: 800px;
-  text-align: justify;
+  /*text-align: left;*/
   /* Ajusta o alinhamento do texto */
 }
 
 .relative {
-  flex-shrink: 0;
+  flex: 1;
+  max-width: 50%;
   /* Impede que a imagem reduza de tamanho */
 }
 
@@ -1080,7 +1081,7 @@ nav ul li a.active {
   #team .flex {
     justify-content: space-between;
     /* Espaçamento entre o texto e a imagem */
-    align-items: center;
+    align-items: flex-start;
     /* Centraliza verticalmente */
   }
 }
