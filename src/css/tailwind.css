@@ -475,7 +475,7 @@ a,
 
 i{
   --tw-text-opacity: 1;
-  color: rgb(174 56 36 / var(--tw-text-opacity));
+  color: rgb(70 130 180 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after{
@@ -580,12 +580,12 @@ i{
 
 .divide-1 {
   height: 1px;
-  background: linear-gradient(270deg, hsla(9, 36%, 57%, 1) 0%, hsla(9, 65%, 88%, 0.34) 100%);
+  background: linear-gradient(270deg, rgb(92, 92, 92) 0%, hsla(0, 0%, 35%, 0.34) 100%);
 }
 
 .divide-2 {
   height: 1px;
-  background: linear-gradient(270deg, hsla(9, 65%, 88%, 0.34), hsla(9, 36%, 57%, 1));
+  background: linear-gradient(270deg, hsla(0, 0%, 29%, 0.34), rgb(99, 99, 99));
 }
 
 .menu-mobile,
@@ -599,7 +599,7 @@ nav ul li a.active::after {
 
 nav ul li a.active {
   font-weight: 600;
-  color: #555555
+  color: #C7C7C7
 }
 
 .limit-content{
@@ -612,9 +612,9 @@ nav ul li a.active {
   border-radius: 0.25rem;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(174 56 36 / var(--tw-border-opacity));
+  border-color: rgb(70 130 180 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(174 56 36 / var(--tw-bg-opacity));
+  background-color: rgb(70 130 180 / var(--tw-bg-opacity));
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   padding-top: 0.75rem;
@@ -631,7 +631,7 @@ nav ul li a.active {
 .btn:hover{
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(174 56 36 / var(--tw-text-opacity));
+  color: rgb(70 130 180 / var(--tw-text-opacity));
 }
 
 /* Header Styles */
@@ -651,7 +651,7 @@ nav ul li a.active {
 
 .link-menu:hover{
   --tw-text-opacity: 1;
-  color: rgb(174 56 36 / var(--tw-text-opacity));
+  color: rgb(70 130 180 / var(--tw-text-opacity));
 }
 
 .li-after::after{
@@ -661,7 +661,7 @@ nav ul li a.active {
   height: 0.125rem;
   width: 0px;
   --tw-bg-opacity: 1;
-  background-color: rgb(174 56 36 / var(--tw-bg-opacity));
+  background-color: rgb(70 130 180 / var(--tw-bg-opacity));
   --tw-content: '';
   content: var(--tw-content);
 }
@@ -709,7 +709,7 @@ nav ul li a.active {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   --tw-bg-opacity: 1;
-  background-color: rgb(174 56 36 / var(--tw-bg-opacity));
+  background-color: rgb(70 130 180 / var(--tw-bg-opacity));
   --tw-content: '';
   content: var(--tw-content);
 }
@@ -839,8 +839,16 @@ nav ul li a.active {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-end{
@@ -865,10 +873,6 @@ nav ul li a.active {
 
 .gap-3{
   gap: 0.75rem;
-}
-
-.gap-5{
-  gap: 1.25rem;
 }
 
 .gap-7{
@@ -913,17 +917,17 @@ nav ul li a.active {
 
 .border-brown-primary{
   --tw-border-opacity: 1;
-  border-color: rgb(174 56 36 / var(--tw-border-opacity));
+  border-color: rgb(70 130 180 / var(--tw-border-opacity));
 }
 
 .border-b-brown-primary{
   --tw-border-opacity: 1;
-  border-bottom-color: rgb(174 56 36 / var(--tw-border-opacity));
+  border-bottom-color: rgb(70 130 180 / var(--tw-border-opacity));
 }
 
 .bg-brown-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(174 56 36 / var(--tw-bg-opacity));
+  background-color: rgb(70 130 180 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -1044,7 +1048,7 @@ nav ul li a.active {
 
 .text-brown-primary{
   --tw-text-opacity: 1;
-  color: rgb(174 56 36 / var(--tw-text-opacity));
+  color: rgb(70 130 180 / var(--tw-text-opacity));
 }
 
 .text-gray-primary{
@@ -1057,33 +1061,15 @@ nav ul li a.active {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-yellow-500{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
 .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-/* Ajustes gerais */
-.text-section {
-  flex: 1;
-  max-width: 800px;
-  /*text-align: left;*/
-  /* Ajusta o alinhamento do texto */
-}
-
-.relative {
-  flex: 1;
-  max-width: 50%;
-  /* Impede que a imagem reduza de tamanho */
-}
-
-@media (min-width: 1024px) {
-  #team .flex {
-    justify-content: space-between;
-    /* Espaçamento entre o texto e a imagem */
-    align-items: flex-start;
-    /* Centraliza verticalmente */
-  }
 }
 
 @media (max-width: 992px){
@@ -1195,10 +1181,6 @@ nav ul li a.active {
 
   .min-lg\:items-center{
     align-items: center;
-  }
-
-  .min-lg\:justify-center{
-    justify-content: center;
   }
 
   .min-lg\:justify-between{
