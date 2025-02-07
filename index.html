@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="src/image/jan-domingues-logo.svg" type="image/x-icon">
     <!-- Main CSS -->
     <link rel="stylesheet" href="src/css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Icon css -->
     <link rel="stylesheet" href="src/fonts/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -118,34 +119,61 @@
                 </p>
             </div>
 
-            <div class="mt-24 flex flex-col gap-14 text-center min-lg:flex-row min-lg:gap-7">
-            <div class="border-b-4 border-brown-primary pb-16" data-aos="fade-down" data-aos-duration="500">
-                <i class="fas fa-user text-7xl"></i>
-                <h3 class="mt-6 font-bold text-2xl md:text-3xl">Identidade</h3>
-                <p class="mt-4 px-7 text-md md:text-lg ">
-                    É no seu rosto que se encontra o maior senso da sua identidade, e é por isso que eu trato com muita importância
-                    o cabelo a barba.
-                </p>
-            </div>
+            <section class="mt-24 text-center animate-container">
+                <div class="animate-track">
+                    <!-- Primeira série de itens -->
+                    <div class="border-b-4 border-brown-primary pb-16 animate-item">
+                        <i class="fas fa-user text-7xl"></i>
+                        <h3 class="mt-6 font-bold text-2xl md:text-3xl">Identidade</h3>
+                        <p class="mt-4 px-7 text-md md:text-lg">
+                            É no seu rosto que se encontra o maior senso da sua identidade.
+                        </p>
+                    </div>
             
-            <div class="border-b-4 border-brown-primary pb-16" data-aos="fade-down" data-aos-duration="500">
-                <i class="fas fa-comment-dots text-7xl"></i>
-                <h3 class="mt-6 font-bold text-2xl md:text-3xl">Expressão</h3>
-                <p class="mt-4 px-7 text-md md:text-lg ">
-                    Estudos revelam que 93% da comunicação não é através das palavras, mas 55% da comunicação não verbal é
-                    distribuído na face.
-                </p>
-            </div>
+                    <div class="border-b-4 border-brown-primary pb-16 animate-item">
+                        <i class="fas fa-comment-dots text-7xl"></i>
+                        <h3 class="mt-6 font-bold text-2xl md:text-3xl">Expressão</h3>
+                        <p class="mt-4 px-7 text-md md:text-lg">
+                            93% da comunicação não é através das palavras, mas distribuída na face.
+                        </p>
+                    </div>
             
-            <div class="border-b-4 border-brown-primary pb-16" data-aos="fade-down" data-aos-duration="500">
-                <i class="fas fa-gem text-7xl"></i>
-                <h3 class="mt-6 font-bold text-2xl md:text-3xl">Valorização</h3>
-                <p class="mt-4 px-7 text-md md:text-lg ">
-                    O objetivo será transmitir na imagem pessoal a sua personalidade e valorizar as suas características físicas.
-                </p>
-            </div>
-            </div>
-        </section>
+                    <div class="border-b-4 border-brown-primary pb-16 animate-item">
+                        <i class="fas fa-gem text-7xl"></i>
+                        <h3 class="mt-6 font-bold text-2xl md:text-3xl">Valorização</h3>
+                        <p class="mt-4 px-7 text-md md:text-lg">
+                            O objetivo é valorizar suas características físicas.
+                        </p>
+                    </div>
+            
+                    <!-- Duplicação para efeito contínuo -->
+                    <div class="border-b-4 border-brown-primary pb-16 animate-item">
+                        <i class="fas fa-user text-7xl"></i>
+                        <h3 class="mt-6 font-bold text-2xl md:text-3xl">Identidade</h3>
+                        <p class="mt-4 px-7 text-md md:text-lg">
+                            É no seu rosto que se encontra o maior senso da sua identidade.
+                        </p>
+                    </div>
+            
+                    <div class="border-b-4 border-brown-primary pb-16 animate-item">
+                        <i class="fas fa-comment-dots text-7xl"></i>
+                        <h3 class="mt-6 font-bold text-2xl md:text-3xl">Expressão</h3>
+                        <p class="mt-4 px-7 text-md md:text-lg">
+                            93% da comunicação não é através das palavras, mas distribuída na face.
+                        </p>
+                    </div>
+            
+                    <div class="border-b-4 border-brown-primary pb-16 animate-item">
+                        <i class="fas fa-gem text-7xl"></i>
+                        <h3 class="mt-6 font-bold text-2xl md:text-3xl">Valorização</h3>
+                        <p class="mt-4 px-7 text-md md:text-lg">
+                            O objetivo é valorizar suas características físicas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
 
         <div class="divide-2 limit-content" id="team"></div>
 
@@ -156,8 +184,8 @@
                 </h2>
             </div>
             <!-- Alinhamento lado a lado -->
-            <div class="flex flex-col items-center gap-10 min-lg:flex-row min-lg:items-start">
-                <div class="text-section">
+            <div class="flex flex-col items-center gap-10 min-lg:flex-row min-lg:items-start img-hero" data-aos="fade-down" data-aos-duration="500">
+                <div class="text-section w-full min-lg:w-1/2">
                     <p class="mt-5 text-md">
                         Um barbeiro apaixonado pela arte da beleza.
                         Nascido e criado em Ibiúna, mas recentemente tive a oportunidade de viver em São Paulo,
@@ -175,8 +203,8 @@
                         meus clientes.
                     </p>
                 </div>
-                <div class="relative w-max" data-aos="fade-down" data-aos-duration="500">
-                    <img src="src/image/team/wade-warren.jpg" alt="barber image"
+                <div class="relative w-max min-lg:w-1/2 img-hero" data-aos="fade-down" data-aos-duration="500">
+                    <img src="src/image/team/courtney-henry.jpg" alt="barber image"
                         class="border-4 border-b-brown-primary border-r-0 border-l-0">
                     <span class="name-barber">Jean Domingues</span>
                 </div>
@@ -214,8 +242,11 @@
                 Para entender mais sobre a sua personalidade utilizaremos da seguinte ferramenta que é usada e testada
                 em Havard para mapeamento de personalidade em contratações de grandes empresas.
             </p>
-            <button class="mt-7 btn" onclick="window.location.href='https://creativehut.com.br/negocios/teste-de-perfil-comportamental-em-arquetipos'">Clique e faça seu teste
-</button>
+            <button class="mt-7 btn">
+                <a href="https://creativehut.com.br/negocios/teste-de-perfil-comportamental-em-arquetipos" target="_blank" rel="noopener noreferrer">
+                Clique e faça seu teste
+                </a>
+            </button>
 
             </div>
        
@@ -334,19 +365,19 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide cursor-grab min-lg:px-5">
                         <blockquote>
-                            <span class="text-5xl font-serif text-brown-primary relative top-5">“</span> Damn that place
-                            is real shit lol. Got there with the homies, music playing
-                            loooooud, a lot of beers and stuff you know? I felt very comfortable too, the air
-                            conditioner was insane. About the cut: the best of my entire life. The barber guy was a
-                            complete MASTER! The price was very expensive though, but I felt like it was worth paying.
-                            Best Cut Ever.
+                            <span class="text-5xl font-serif text-brown-primary relative top-5">“</span>
+                            Eu sempre tive dificuldades em me sentir confiante com a minha imagem. Quando conheci o Jean Domingues, ele conseguiu
+                            transformar não apenas meu visual, mas minha autoestima. Ele fez um trabalho incrível, entendendo minhas características
+                            e me ajudando a destacar o que eu tenho de melhor. Agora, eu me sinto muito mais seguro para enfrentar reuniões e
+                            eventos importantes. Acredite, o visagismo mudou completamente a forma como me vejo e me relaciono com os outros, tanto
+                            pessoal quanto profissionalmente. Eu recomendo de olhos fechados!
                         </blockquote>
 
                         <div class="mt-5 flex justify-between items-center">
                             <div>
                                 <cite class="flex items-center gap-3">
                                     <img src="src/image/bob.jpg" alt="image person" class="w-8 rounded-full">
-                                    <span class="italic text-gray-primary">Bob Hairless</span>
+                                    <span class="italic text-gray-primary">Lucas Henrique</span>
                                 </cite>
                             </div>
 
@@ -363,10 +394,11 @@
                     <div class="swiper-slide cursor-grab min-lg:px-5">
                         <blockquote>
                             <span class="text-5xl font-serif text-brown-primary relative top-5">“</span>
-                            I just spent a night at this lovely place as a very special birthday present. It is very
-                            small but our room was very big, beautifully decorated and with a huge state of the art
-                            bathroom which included two beautiful orange bathrobes! The present included a visit to the
-                            spa on the top floor (1 hour and a half)
+                            Contratar o serviço do Jean foi uma das melhores decisões que tomei. Sempre tive dificuldade em alinhar meu estilo
+                            pessoal com a minha profissão. O Jean me ajudou a entender como pequenos ajustes no meu visual poderiam refletir
+                            diretamente na minha confiança e na minha imagem profissional. Agora, minhas roupas, corte de cabelo e até a maquiagem
+                            que ele sugeriu fazem sentido com a minha personalidade. Isso fez toda a diferença no meu dia a dia, especialmente no
+                            meu trabalho. Eu me sinto mais autêntico e confortável, e isso transparece nas minhas interações com os outros.
                         </blockquote>
 
                         <div class="mt-5 flex justify-between items-center">
@@ -374,7 +406,7 @@
                                 <cite class="flex items-center gap-3">
                                     <img src="src/image/damien.jpg" alt="image person" class="w-8 rounded-full">
                                     <span class="italic text-gray-primary">
-                                        Damien Challeze
+                                        Rafael Lourenço
                                     </span>
                                 </cite>
                             </div>
@@ -392,7 +424,12 @@
                     <div class="swiper-slide cursor-grab">
                         <blockquote>
                             <span class="text-5xl font-serif text-brown-primary relative top-5">“</span>
-                            Well, it was nice.
+                            Eu estava passando por uma fase de transição na minha carreira e sabia que precisava dar uma renovada no meu visual. O
+                            Jean foi incrível em entender meu estilo de vida e me proporcionar uma imagem mais alinhada com quem eu sou hoje. Ele me
+                            mostrou como destacar minhas características e me senti muito mais empoderada depois da consultoria. Não apenas na parte
+                            estética, mas a confiança que eu ganhei refletiu em todas as áreas da minha vida. Fui promovida poucos meses depois, e
+                            acredito que a forma como me enxergava e como passei a me apresentar ajudou muito nesse processo. Sou eternamente grata
+                            ao Jean por essa transformação!
                         </blockquote>
 
                         <div class="mt-5 flex justify-between items-center">
@@ -400,7 +437,7 @@
                                 <cite class="flex items-center gap-3">
                                     <img src="src/image/mike.jpg" alt="image person" class="w-8 rounded-full">
                                     <span class="italic text-gray-primary">
-                                        Big Mike
+                                        Michael Salgado
                                     </span>
                                 </cite>
                             </div>
@@ -464,13 +501,13 @@
         <div class="px-5 py-16 limit-content min-lg:flex min-lg:items-center min-lg:justify-between"
             data-aos="fade-left" data-aos-duration="1000">
             <div>
-                <img src="src/image/jean (1) (1).svg" alt="Logo Barber House">
+                <img src="src/image/jean (1) (1).svg" alt="Logo Barber House" class="img-logo">
                 <p class="text-white text-lg mt-6">©2024 Jean Domingues - Visagista</p>
-                <p class="text-white text-lg mt-4">Desenvolvido por <a href="https://github.com/dvdlucas">David Lucas</a></p>
+                <p class="text-white text-lg mt-4">Desenvolvido por <a href="https://github.com/dvdlucas" target="_blank" rel="noopener noreferrer">David Lucas</a></p>
             </div>
             <div class="mt-10 flex gap-7">
                 <div>
-                    <a href="https://instragram.com/jeandomingues_obarbeiro"target="_blank" rel="noopener noreferrer"">
+                    <a href="https://instragram.com/jeandomingues_obarbeiro"target="_blank" rel="noopener noreferrer">
                         <i class="icon-instagram text-white text-2xl"></i>
                     </a>
                 </div>
