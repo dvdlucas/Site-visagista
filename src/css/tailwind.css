@@ -1305,7 +1305,7 @@ nav ul li a.active {
 }
 
 .section-description {
-  background: linear-gradient(135deg, #f7e7ce, #dab897);
+  background: linear-gradient(135deg, #aaaaa9, #d3d2d1);
   padding: 40px;
   border-radius: 15px;
   position: relative;
@@ -1334,15 +1334,6 @@ nav ul li a.active {
   }
 }
 
-.parallax-section {
-  height: 500px;
-  background: url('seu-banner.jpg') center/cover fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-}
 
 .counter-container {
   display: flex;
