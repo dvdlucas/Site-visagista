@@ -73,3 +73,104 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+const textParts = [
+  { text: "Harmonia e Estilo Moldando a Sua Melhor ", isTag: false },
+  { text: '<span class="text-brown-primary">Versão!</span>', isTag: true },
+];
+
+let index = 0;
+let partIndex = 0;
+let typingInProgress = true;
+
+function typeEffect() {
+  const element = document.getElementById("text-output");
+  const currentPart = textParts[partIndex];
+
+  if (partIndex < textParts.length) {
+    if (!currentPart.isTag) {
+      element.innerHTML += currentPart.text.charAt(index);
+      index++;
+      if (index >= currentPart.text.length) {
+        index = 0;
+        partIndex++;
+        typingInProgress = false; // Finaliza a digitação
+        setTimeout(typeEffect, 1000); // Pausa antes de passar para a próxima parte
+      }
+    } else {
+      element.innerHTML += currentPart.text;
+      partIndex++;
+      typingInProgress = false;
+      setTimeout(typeEffect, 1000);
+    }
+
+    if (typingInProgress) {
+      setTimeout(typeEffect, 100); // Continua a digitação
+    }
+  }
+}
+
+function blinkCursor() {
+  const cursor = document.getElementById("cursor");
+  cursor.style.visibility =
+    cursor.style.visibility === "hidden" ? "visible" : "hidden";
+  setTimeout(blinkCursor, 500); // Tempo do efeito de piscar (500ms)
+}
+
+typeEffect();
+blinkCursor(); // Inicia o piscar do cursor
+
+let count = 1;
+const maxCount = 200;
+let counterStarted = false;
+
+function animateCounter() {
+  const counterElement = document.getElementById("counter");
+  if (count <= maxCount) {
+    counterElement.textContent = count;
+    count++;
+    setTimeout(animateCounter, 20);
+  }
+}
+
+function startCounterWhenVisible() {
+  const targetSection = document.querySelector("#testimonials");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        // Quando a section entra em vista e o contador não começou ainda
+        if (entry.isIntersecting && !counterStarted) {
+          counterStarted = true;
+          count = 1; // Reinicia o contador
+          animateCounter();
+        }
+        // Quando a section sai da vista, reseta o contador
+        else if (!entry.isIntersecting && counterStarted) {
+          counterStarted = false;
+          count = 1; // Reinicia o contador para a próxima vez
+        }
+      });
+    },
+    { threshold: 0.5 } // Inicia quando 50% da seção está visível
+  );
+
+  observer.observe(targetSection);
+}
+
+startCounterWhenVisible();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "Dossiê de Identidade Visual.";
+  const typingText = document.getElementById("typing-text");
+  let index = 0;
+
+  function typeText() {
+    if (index < text.length) {
+      typingText.innerHTML += text[index++];
+      setTimeout(typeText, 100);
+    }
+  }
+
+  typeText();
+});

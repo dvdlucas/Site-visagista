@@ -90,9 +90,10 @@
 
             <div class="mt-12 px-7 text-center min-lg:flex-1 min-lg:text-left" data-aos="zoom-out-left"
                 data-aos-duration="1000">
-                <h1 class="main-title min-lg:leading-normal">
-                    Harmonia e Estilo Moldando a Sua Melhor <span class="text-brown-primary"> Versão</span>
+                <h1 class="main-title min-lg:leading-normal"  id="typewriter">
+                    <span id="text-output"></span><span id="cursor">|</span>
                 </h1>
+               
                 <p class="mt-4 text-md md:text-lg min-lg:pr-14">
                     Descubra como sua imagem pode revelar o melhor de você. Vamos juntos transformar sua identidade visual!
                 </p>
@@ -178,7 +179,8 @@
         <div class="divide-2 limit-content" id="team"></div>
 
         <section class="mt-28 pb-28 px-5 limit-content min-lg:mt-32 min-lg:pb-44" >
-            <div class="section-description" data-aos="fade-down" data-aos-duration="500">
+            <div class="min-lg:text-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1000">
                 <h2 class="main-title">
                     Sobre <span class="text-brown-primary">Mim</span>
                 </h2>
@@ -216,10 +218,11 @@
 
         <section class="mt-28 pb-28 px-5 limit-content">
             <div class="section-description" data-aos="fade-down" data-aos-duration="1000">
-            <h2 class="main-title">
-                <span class="text-brown-primary"> Vamos Alinhar a sua Imagem! </span>
-            </h2>
-            
+                <div class="min-lg:text-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                    <h2 class="main-title">
+                        <span class="text-brown-primary"> Vamos Alinhar a sua Imagem! </span>
+                    </h2>
+            </div>
             <p class="mt-5 text-md">
                 Nessa etapa teremos uma
                 reunião, onde procuro
@@ -242,21 +245,24 @@
                 Para entender mais sobre a sua personalidade utilizaremos da seguinte ferramenta que é usada e testada
                 em Havard para mapeamento de personalidade em contratações de grandes empresas.
             </p>
+           
             <button class="mt-7 btn">
-                <a href="https://creativehut.com.br/negocios/teste-de-perfil-comportamental-em-arquetipos" target="_blank" rel="noopener noreferrer">
+                <a href="https://creativehut.com.br/negocios/teste-de-perfil-comportamental-em-arquetipos" 
+                    target="_blank" rel="noopener noreferrer">
                 Clique e faça seu teste
                 </a>
             </button>
-
             </div>
+        </section>
+
        
             <div class="mt-16 grid grid-cols-2 gap-3 min-lg:gap-4 max-lg:max-w-650 min-lg:w-100 min-lg:mx-auto min-lg:grid-cols-4"
-                data-aos="fade-down" data-aos-duration="1000">
-                <div class="flex items-end">
+                data-aos="flip-right" data-aos-duration="1000">
+                <div class="flex items-end image-hover-effect">
                     <img src="src/image/gallery/gallery-5.jpg" alt="barber 5" class="w-full">
                 </div>
 
-                <div class="flex items-end">
+                <div class="flex items-end image-hover-effect">
                     <img src="src/image/gallery/gallery-4.jpg" alt="barber 4" class="w-full">
                 </div>
 
@@ -313,11 +319,12 @@
 
         <section class="mt-28 pb-28 px-5 limit-content" id="highlights">
             <div class="section-description" data-aos="fade-down" data-aos-duration="1000">
-                <h2 class="main-title">
-                    <span class="text-brown-primary"> Dossiê de Identidade Visual. </span>
-                </h2>
+            <h2 class="main-title" data-aos="zoom-in">
+                <span id="typing-text" class="text-brown-primary"></span>
+            </h2>
+
         
-                <p class="mt-5 text-md">
+                <p class="mt-5 text-md" data-aos="fade-up">
                 O Dossiê Digital é um arquivo
                 de imagens com
                 recomendações personalizadas
@@ -334,15 +341,15 @@
             </div>
         
             <div class="mt-16 grid grid-cols-2 gap-3 min-lg:gap-4 max-lg:max-w-650 min-lg:w-100 min-lg:mx-auto min-lg:grid-cols-4"
-                data-aos="fade-down" data-aos-duration="1000">
-                <div>
+                data-aos="flip-right" data-aos-duration="1000">
+                <div class="gallery-item">
                     <img src="src/image/gallery/gallery-6.jpg" alt="barber 6" class="w-full">
                 </div>
         
-                <div>
+                <div class="gallery-item">
                     <img src="src/image/gallery/gallery-3.jpg" alt="barber 3" class="w-full h-full">
                 </div>
-                <div class="col-span-2">
+                <div class="col-span-2 gallery-item">
                     <img src="src/image/gallery/gallery-2.jpg" alt="barber 2" class="w-full h-full">
                 </div>
         
@@ -453,6 +460,12 @@
                     </div>
                 </div>
 
+                <div class="counter-container">
+                    <span class="counter-plus">+</span>
+                    <span id="counter" class="counter-number">1</span>
+                    <span class="counter-text">Clientes Satisfeitos</span>
+                </div>
+
                 <div class="swiper-pagination !static pt-10"></div>
             </div>
         </section>
@@ -472,7 +485,7 @@
                     quem faz tudo isso acontecer
                 </p>
                 <button
-                    class="mt-7 bg-brown-primary text-white px-7 py-3 text-lg font-medium font-dm-sans flex items-center gap-3 rounded-md">
+                    class="mt-7 bg-brown-primary text-white px-7 py-3 text-lg font-medium font-dm-sans flex items-center gap-3 rounded-md mt-7 btn">
                     <i class="icon-whatsapp text-white text-2xl"></i>
                     <a href="https://wa.me/15997332347?text=Ol%C3%A1%20Jean%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20de%20como%20encontrar%20a%20minha%20melhor%20vers%C3%A3o" target="_blank" rel="noopener noreferrer"><span>Envie uma mensagem</span></a>
                 </button>

@@ -1288,3 +1288,106 @@ nav ul li a.active {
     transform: translateX(-100%);
   }
 }
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.section-description {
+  background: linear-gradient(135deg, #f7e7ce, #dab897);
+  padding: 40px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-description:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+  animation: rotate-gradient 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate-gradient {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.parallax-section {
+  height: 500px;
+  background: url('seu-banner.jpg') center/cover fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c2c2c;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: 3px solid #dfd4c1;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Número dourado */
+.counter-number {
+  font-size: 4rem;
+  color: #ffd700;
+  font-weight: bold;
+  font-family: 'Arial Black', sans-serif;
+}
+
+/* Sinal de + */
+.counter-plus {
+  font-size: 4rem;
+  color: #ffd700;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* Texto ao lado */
+.counter-text {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#cursor {
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  /* Ou a cor que você preferir */
+  visibility: visible;
+  /* Inicialmente visível */
+  transition: visibility 0.3s ease-in-out;
+}
